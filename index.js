@@ -13,7 +13,6 @@ const Port = process.env.PORT;
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-app.use('/api/req',require('./Routes/rentRequest'));
 app.use('/api/auth', require('./Routes/userRoutes')); 
 app.use('/api/books', require('./Routes/booksRoutes')); 
 
